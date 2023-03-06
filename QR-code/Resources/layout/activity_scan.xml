@@ -29,6 +29,7 @@
             android:inputType="textMultiLine"
             android:autoLink="web"
             android:scrollbars="vertical"
+            android:textIsSelectable="true"
     />
 
     <Button

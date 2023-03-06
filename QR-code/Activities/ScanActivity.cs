@@ -33,14 +33,13 @@ namespace QR_code
 
             var result = await scanner.Scan();
             if (result != null && textView != null)
-            {
                 textView.Text = result.Text;
-            }
+            
         }
 
         private void GenerateBtn_Click()
         {
-            FinishActivity(0);
+            Finish();
         }
     }
 }
