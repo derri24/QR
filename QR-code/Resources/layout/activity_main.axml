@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff">
+
+
+    <EditText
+            android:id="@+id/data"
+            android:layout_width="333dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="20dp"
+            android:background="#ffffff"
+            android:gravity="top"
+            android:hint="Enter data.."
+            android:inputType="textMultiLine"
+            android:scrollbars="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+    />
+    <Button
+            android:id="@+id/generateQrBtn"
+            android:layout_marginTop="175dp"
+            android:layout_width="333dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="14dp"
+            android:background="#ffffff"
+            android:text="GENERATE"
+            android:textSize="24dp"/>
+
+    <ImageView
+            android:id="@+id/qrImage"
+            android:layout_marginTop="210dp"
+            android:layout_marginLeft="14dp"
+            android:layout_width="365dp"
+            android:layout_height="365dp">
+
+    </ImageView>
+</RelativeLayout>
