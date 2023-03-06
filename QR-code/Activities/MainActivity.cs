@@ -1,5 +1,6 @@
 ﻿using System.IO;
 using Android.App;
+using Android.Content;
 using Android.Graphics.Drawables;
 using Android.OS;
 using Android.Support.V7.App;
@@ -19,9 +20,13 @@ namespace QR_code
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.activity_main);
 
-            var generateQr = (Button) FindViewById(Resource.Id.generateQrBtn);
-            if (generateQr != null)
-                generateQr.Click += delegate { GenerateQrBtn_Click(); };
+            var generateQrBtn = (Button) FindViewById(Resource.Id.generateQrBtn);
+            if (generateQrBtn != null)
+                generateQrBtn.Click += delegate { GenerateQrBtn_Click(); };
+            
+            var scanBtn = (Button) FindViewById(Resource.Id.scanBtn);
+            if (scanBtn != null)
+                scanBtn.Click += delegate { ScanBtn_Click();};
         }
 
         private void GenerateQr(string data)
@@ -44,6 +49,12 @@ namespace QR_code
         {
             var data = ((EditText) FindViewById(Resource.Id.data))?.Text;
             GenerateQr(data);
+        }
+
+        private void ScanBtn_Click()
+        {
+            Intent intent = new Intent(this, typeof(ScanActivity));
+            StartActivity(intent);
         }
     }
 }
