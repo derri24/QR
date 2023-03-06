@@ -6,7 +6,6 @@
                 android:layout_height="match_parent"
                 android:background="#ffffff">
 
-
     <EditText
             android:id="@+id/data"
             android:layout_width="333dp"
@@ -40,4 +39,24 @@
             android:layout_height="365dp">
 
     </ImageView>
+    <Button
+            android:id="@+id/generateQrBtn"
+            android:layout_marginTop="570dp"
+            android:layout_width="163dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="14dp"
+            android:background="@color/colorPrimary"
+            android:text="GENERATE"
+            android:textColor="@color/colorWhite"
+            android:textSize="20dp"/>
+    <Button
+            android:id="@+id/generateQrBtn"
+            android:layout_marginTop="570dp"
+            android:layout_width="163dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="185dp"
+            android:background="@color/colorPrimary"
+            android:text="SCAN"
+            android:textColor="@color/colorWhite"
+            android:textSize="20dp"/>
 </RelativeLayout>

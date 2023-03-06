@@ -1,18 +1,12 @@
-﻿using System;
-using System.IO;
-using System.Threading.Tasks;
+﻿using System.IO;
 using Android.App;
-using Android.Content;
-using Android.Graphics;
 using Android.Graphics.Drawables;
 using Android.OS;
-using Android.Runtime;
 using Android.Support.V7.App;
 using Android.Widget;
 using QRCoder;
-using Xamarin.Forms;
 using Button = Android.Widget.Button;
-using Image = System.Drawing.Image;
+
 
 
 namespace QR_code
